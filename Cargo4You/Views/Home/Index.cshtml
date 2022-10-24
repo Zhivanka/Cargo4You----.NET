@@ -1,0 +1,80 @@
+﻿@model InputDataModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+ <div class="bg-gallery">
+    <div class="content">
+        <div class="container">
+      <h1 class="display-4 text-white text-center" style="font-weight: 600">Cargo4You</h1>
+      <h1 class="display-6 text-white text-center" style="font-weight: 500">Send parcels at the best rates</h1>
+      <br/>
+      <form method="post" asp-controller="Calculation" asp-action="Result">
+          <div class="row">
+
+          <div class="col-2">
+          </div>
+
+          <div class="col-2">
+          <input asp-for="Width" type="number" class="form-control" placeholder="Enter width (cm)"/>
+           <span asp-validation-for="Width" class="badge bg-danger"></span>
+          </div>
+      
+          <div class="col-2">
+          <input asp-for="Height" type="number" class="form-control" placeholder="Enter height (cm)"/>
+           <span asp-validation-for="Height" class="badge bg-danger"></span>
+          </div>
+
+          <div class="col-2">
+          <input asp-for="Depth" type="number" class="form-control" placeholder="Enter depth"/>
+           <span asp-validation-for="Depth" class="badge bg-danger"></span>
+          </div>
+
+
+          <div class="col-2">
+          <input asp-for="Weight" type="number" class="form-control" placeholder="Enter weight (kg)"/>
+           <span asp-validation-for="Weight" class="badge bg-danger"></span>
+          </div>
+
+          <div class="col-2">
+          <button type="submit" class="btn btn-primary">
+             <h3><i class="bi bi-arrow-right-circle"></i></h3>
+          </button>
+          </div>
+
+          </div>
+      </form>
+      </div>
+      
+    </div>
+  </div>
+
+  <br/>
+<main class="container">
+      <div class="row">
+      <div class="col-3"></div>
+      <div class="col-2 text-center" style="color:grey;"><h1><i class="bi bi-award-fill"></i></h1></div>
+      <div class="col-3 text-center" style="color:grey;"><h1><i class="bi bi-globe"></i></h1></div>
+      <div class="col-2 text-center" style="color:grey;"><h1><i class="bi bi-stopwatch-fill"></i></h1></div>
+      <div class="col-2"></div>
+      </div>
+
+       <div class="row">
+      <div class="col-3"></div>
+      <div class="col-2 text-center" style="color:grey;">
+          <h5><b>Best Cargo Airline</b></h5>
+          <i>Award winner for 2022!</i>
+       </div>
+      <div class="col-3 text-center" style="color:grey;">
+          <h5><b>Around the globe</b></h5>
+          <i>We can take your parcel everywhere.</i>
+      </div>
+      <div class="col-2 text-center" style="color:grey;">
+          <h5><b>Fast Shipment</b></h5>
+          <i>Door-to-door delivery</i>
+      </div>
+      <div class="col-2"></div>
+      </div>
+
+ </main>

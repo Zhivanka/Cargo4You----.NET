@@ -1,0 +1,35 @@
+﻿
+@model Dictionary<string,double>
+@{
+    ViewData["Title"] = "Result";
+}
+
+<br/>
+
+<div class="card border-secondary mb-3" style="max-width:50rem; margin-left:15%">
+  <div class="card-header text-center">Pick your courier</div>
+  <div class="card-body">
+<table class="table table-hover" style="width:100%;">
+    
+    <thead  class="table-secondary">
+        <tr>
+            <th>Courier</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(KeyValuePair<string,double> pair in Model)
+        {
+        <tr class="table-active">
+            <td>@pair.Key</td>
+            <td>@pair.Value eur</td>
+        </tr>
+        }
+    </tbody>
+
+
+</table>
+
+</div></div>
+
