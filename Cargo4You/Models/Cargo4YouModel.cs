@@ -1,10 +1,21 @@
-﻿namespace Cargo4You.Models
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+
+namespace Cargo4You.Models
 {
-    public class Cargo4YouModel
+
+    
+    public class CargoModel
     {
-        public double DimensionPrice { get; set; }
-        public double WeightPrice { get; set; }
-        public double FinalPrice { get; set; }
+
+        [Key]
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public string[] Validations { get; set; }
+
+        public List<KeyValuePair<string, string>> CalculationsWeight { get; set; }
+        public List<KeyValuePair<string, string>> CalculationsDimension { get; set; }
 
     }
 }
