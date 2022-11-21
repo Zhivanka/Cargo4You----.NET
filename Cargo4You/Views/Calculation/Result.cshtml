@@ -1,5 +1,5 @@
 ﻿
-@model Dictionary<string,double>
+@model List<KeyValuePair<string,double>>
 @{
     ViewData["Title"] = "Result";
 }
@@ -21,10 +21,15 @@
     <tbody>
         @foreach(KeyValuePair<string,double> pair in Model)
         {
-        <tr class="table-active">
-            <td>@pair.Key</td>
-            <td>@pair.Value eur</td>
-        </tr>
+
+                        <tr class="table-active">
+                        <td>@pair.Key &nbsp;
+                        @if (@pair.Key == "Cargo 4 You")
+                        {<span class="badge rounded-pill bg-danger">*recomended</span>}
+                        </td>
+                        <td>@pair.Value eur</td>
+                        </tr>
+       
         }
     </tbody>
 

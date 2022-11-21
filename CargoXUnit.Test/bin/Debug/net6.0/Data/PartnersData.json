@@ -1,0 +1,109 @@
+[
+  {
+    "Id": "1",
+    "Name": "Cargo 4 You",
+    "Validations": [ "<=20kg", "<=2000cm" ],
+    "CalculationsWeight": 
+    [
+      {
+        "Key":"<=2",
+        "Value":"15"
+      },
+      {
+        "Key": ">2&&<=15",
+        "Value": "18"
+      },
+      {
+        "Key": ">15&&<=20",
+        "Value": "35"
+      }
+    ],
+    "CalculationsDimension": [
+      {
+
+        "Key": "<=1000",
+        "Value": "10"
+      },
+      {
+        "Key": ">1000&&<=2000",
+        "Value": "20"
+      }
+
+    ]
+  },
+
+  {
+    "Id": "2",
+    "Name": "Ship Faster",
+    "Validations": [ ">10&&<=30kg", "<=1700cm" ],
+    "CalculationsWeight": 
+    [
+      {
+        "Key": ">10&&<=15",
+        "Value":"16,5"
+      },
+      {
+        "Key":">15&&<=25",
+        "Value":"36,5"
+      },
+      {
+        "Key":">25",
+        "Value":"40+0,417"
+      }
+    ],
+    "CalculationsDimension": 
+    [
+      {
+        "Key":"<=1000",
+        "Value":"11,99"
+      },
+      {
+        "Key":">1000&&<=1700",
+        "Value":"21,99"
+      }
+    ]
+
+
+  },
+
+  {
+    "Id": "3",
+    "Name": "Malta Ship",
+    "Validations": [ ">=10kg", ">=500cm" ],
+    "CalculationsWeight": 
+    [
+      {
+        "Key":">=10&&<=20",
+        "Value":"16,99"
+      },
+      {
+        "Key":">20&&<=30",
+        "Value":"33,99"
+      },
+      {
+        "Key":">30",
+        "Value":"43,99+0,41"
+      }
+    ],
+    "CalculationsDimension": [
+      {
+        "Key":"<=1000",
+        "Value":"9,5"
+      },
+      {
+        "Key":">1000&&<=2000",
+        "Value":"19,5"
+      },
+      {
+        "Key":">2000&&<=5000",
+        "Value":"48,5"
+      },
+      {
+        "Key":">5000",
+        "Value":"147,5"
+      }
+    ]
+
+
+  }
+]

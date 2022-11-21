@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cargo4You", "Cargo4You\Cargo4You.csproj", "{10E33722-57BF-4FB1-92CF-61BCE4E7D820}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CargoXUnit.Test", "CargoXUnit.Test\CargoXUnit.Test.csproj", "{4226E90F-D796-49F7-9573-97511FB42485}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{10E33722-57BF-4FB1-92CF-61BCE4E7D820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10E33722-57BF-4FB1-92CF-61BCE4E7D820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10E33722-57BF-4FB1-92CF-61BCE4E7D820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4226E90F-D796-49F7-9573-97511FB42485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4226E90F-D796-49F7-9573-97511FB42485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4226E90F-D796-49F7-9573-97511FB42485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4226E90F-D796-49F7-9573-97511FB42485}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
