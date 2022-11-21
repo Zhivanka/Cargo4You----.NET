@@ -1,3 +1,4 @@
+
 ﻿using Cargo4You.Models;
 using Cargo4You.Data;
 using Microsoft.AspNetCore.Mvc;
@@ -269,18 +270,7 @@ namespace Cargo4You.Controllers
         }
 
 
-        //cookie
-        public void GetCookie( double dimension, double weight)
-        {
-            CookieOptions options = new()
-            {
-                Expires = DateTime.Now.AddMonths(1),
-                Path = ""
-            };
-            Response.Cookies.Append("CookieCargoDimension", dimension.ToString(), options);
-            Response.Cookies.Append("CookieCargoWeight", weight.ToString(), options);
 
-        }
 
 
         
